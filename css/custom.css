@@ -1,0 +1,22 @@
+/* 전체 슬라이드 배경색 설정
+.reveal {
+    background-color: #f0f0f0; 
+} 
+*/
+
+/* 슬라이드 내 텍스트 색상 설정 */
+.reveal h1,
+.reveal h2
+ {
+    color: mediumseagreen; /* 짙은 회색 글자 */
+}
+
+/* 링크 색상 설정 (필요시) */
+.reveal a {
+    color: #000000; /* 검정색 글자 */
+    text-decoration: none; /* 링크 밑줄 제거 */
+}
+
+.reveal a:hover {
+    color: #555555; /* 링크 호버 시 색상 변경 */
+}

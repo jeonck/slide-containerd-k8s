@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Container Runtime Overview</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+	<link rel="stylesheet" href="css/custom.css"> <!-- custom.css 추가 -->
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h2 >컨테이너 런타임의 개념과 의의</h2>
+                <p>컨테이너 런타임(Container Runtime)은 컨테이너의 생성, 실행, 관리를 담당하는 핵심 소프트웨어로, 클라우드 네이티브 환경에서 중추적인 역할을 수행합니다.</p>
+                <p>런타임은 컨테이너의 전체 생명 주기 관리, 리소스 할당, 격리 환경 유지 등을 포함합니다.</p>
+            </section>
+            <section>
+                <h2>컨테이너 런타임의 발전</h2>
+                <p>2013년 Docker의 등장 이후, 경량화된 런타임이 필요해졌습니다. Docker는 2016년 containerd를 오픈소스로 분리하여 클라우드 네이티브 환경의 표준으로 자리 잡았습니다.</p>
+            </section>
+            <section>
+                <h2>표준화: OCI와 CRI</h2>
+                <p>OCI(Open Container Initiative)는 컨테이너 형식과 런타임에 대한 표준을 정의합니다.</p>
+                <p>CRI(Container Runtime Interface)는 Kubernetes와의 통신을 위한 표준 인터페이스입니다.</p>
+            </section>
+            <section>
+                <h2>containerd의 장점</h2>
+                <ul>
+                    <li>경량화된 아키텍처로 자원 소모가 적음</li>
+                    <li>OCI 및 CRI 표준 준수로 상호 운용성 보장</li>
+                    <li>Kubernetes와의 긴밀한 통합으로 안정적 운영</li>
+                    <li>모듈성과 확장성으로 커스터마이징 용이</li>
+                </ul>
+            </section>
+            <section>
+                <h2>결론</h2>
+                <p>containerd는 클라우드 네이티브 환경에서 효율적이고 안정적인 컨테이너 관리를 가능하게 하며, Docker보다 더 널리 채택되고 있습니다.</p>
+            </section>
+            <section>
+                <h2>수학적 표현</h2>
+                <p>컨테이너 런타임의 성능을 수학적으로 표현하면 다음과 같습니다:</p>
+                <p>성능 = $\frac{처리량}{지연시간}$</p>
+            </section>
+        </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/math/math.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ],
+            transition: 'fade', // 슬라이드 전환 효과 설정 fade, slide, convex, concave, zoom 중 선택
+            transitionSpeed: 'slow' // 전환 속도 설정
+        });
+    </script>
+</body>
+</html>
